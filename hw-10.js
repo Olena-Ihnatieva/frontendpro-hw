@@ -107,6 +107,12 @@ console.log('Добуток позитивних елементів:', multnumbe
 console.log('Масив:', numbers);
 console.log('Максимальний елемент масиву:', maxNumber);
 
-numbers.splice(0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-numbers.splice(19, 5, 0, 0, 0, 0, 0);
+numbers = numbers.map((item) => {
+    if(item !== maxNumber) {
+        return 0;
+    } else {
+        return item;
+    }
+});
+
 console.log('Новий масив:', numbers);
