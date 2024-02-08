@@ -68,7 +68,7 @@ const phoneUsers = biggerBalance.map(function (user) {
 });
 
 const sumBalance = biggerBalance.reduce(function (acc, cur) {
-    return acc + cur;
+    return acc + +(cur.balance.replace('$', '').replace(',', ''));
 }, 0);
 
 console.log(biggerBalance);
