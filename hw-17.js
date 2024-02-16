@@ -44,8 +44,10 @@ console.log(checkingFun(number) ? `${number} - it's a prime number` : `${number}
 // Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 
 function testFun(num) {
-
-
+    while (num % 3 === 0 && num > 1) {
+        num /= 3;
+    }
+    return num === 1;
 }
-const num = 13;
+const num = 9;
 console.log(testFun(num));
