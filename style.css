@@ -1,0 +1,17 @@
+#feedback {
+    display: flex;
+    justify-content: center;
+}
+
+.reactions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.reactions {
+    margin-bottom: 5px;
+}
