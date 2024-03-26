@@ -2,9 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Front-end Pro</title>
+    <title>Homework_28</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
+<div class="wrapper">
+    <div id="categories"></div>
+    <div id="products"></div>
+    <div id="info"></div>
+    <div id="form-order" class="form-order">
+        <h4>Оформлення замовлення</h4>
+        <div class="form-order-container">
+            <div class="form-section">
+                <label for="fullName" class="required">ПІБ</label>
+                <input id="fullName" type="text" required />
+            </div>
+            <div class="form-section">
+                <label for="city" class="required">Місто</label>
+                <select id="city" required>
+                    <option value="" disabled selected>Виберіть місто</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="delivery">Перевізник</label>
+                <select id="delivery" required>
+                    <option value="novaPost" selected>Нова Пошта</option>
+                    <option value="ukrPost">Укрпошта</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="payment">Оплата</label>
+                <select id="payment" required>
+                    <option value="cash">Грошовий переказ</option>
+                    <option value="card" selected>Liqpay(оплата на сайті)</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="quantity">Кількість</label>
+                <select id="quantity">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-section">
+                <label for="message">Ваші побажання до замовлення</label>
+                <textarea id="message" rows="4" name="message"></textarea>
+            </div>
+        </div>
+        <div class="checkoutBtn">Продовжити</div>
+    </div>
+    <div id="review-order" class="review-order"></div>
+</div>
+
+<script src="hw-28.js"></script>
 </body>
 </html>
